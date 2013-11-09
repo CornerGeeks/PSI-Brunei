@@ -1,0 +1,43 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100sp"
+    android:orientation="horizontal"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <TextView
+        android:id="@+id/txtDistrict"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="@dimen/rowName"
+        android:gravity="left|center_vertical"
+        android:textIsSelectable="true"
+        android:textSize="@dimen/nameFontSize" />
+
+<LinearLayout  
+	android:id="@+id/colDetails"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+	android:layout_weight="@dimen/rowDetails">
+    <TextView
+		android:id="@+id/txtPSI"
+        android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textIsSelectable="true"
+        android:textSize="@dimen/psiFontSize" 
+           />
+    <TextView
+		android:id="@+id/txtAirQuality"
+        android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textIsSelectable="true"
+        android:textSize="@dimen/airQualityFontSize" 		        
+		/>
+    	</LinearLayout>
+</LinearLayout>
